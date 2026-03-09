@@ -5,7 +5,8 @@ pdfReader = PyPDF2.PdfFileReader(book) # Creating a PDF reader object using the 
 pages = pdfReader.numPages # Getting the total number of pages in the PDF document and assigning it to the variable 'pages'.
 print(pages) # Printing the total number of pages in the PDF document.
 friend = pyttsx3.init() # Initializing the text-to-speech engine and assigning it to the variable 'friend'.
-page = pdfReader.getPage(5) # Getting the first page of the PDF document using the 'getPage' method and assigning it to the variable 'page'.
-text = page.extractText() # Extracting the text from the page using the 'extractText' method and assigning it to the variable 'text'.
-friend.say(text) # Using the 'say' method of the 'friend' object to convert the given text into speech.
+for i in range(0, pages): # Starting a loop that iterates from 0 to the total number of pages in the PDF document.
+    page = pdfReader.getPage(i) # Getting each page of the PDF document using the 'getPage' method and assigning it to the variable 'page'.
+    text = page.extractText() # Extracting the text from the page using the 'extractText' method and assigning it to the variable 'text'.
+    friend.say(text) # Using the 'say' method of the 'friend' object to convert the given text into speech.
 friend.runAndWait() # Calling the 'runAndWait' method to process the speech commands and play the audio output.

@@ -92,13 +92,7 @@ I am currently expanding my knowledge toward:
 * Machine Learning
 * Deep Learning
 * Data Analysis
-
-Future repositories will include projects built using libraries such as:
-
-* Python libraries like **NumPy**
-* **Pandas**
-* **Scikit-learn**
-* **PyTorch**
+In future i will add more fun and complex python project in this repository.
 
 ---
 

@@ -1,8 +1,8 @@
 import pygame
 pygame.init()
 window = pygame.display.set_mode((1200, 400))
-track = pygame.image.load("Self-driving_Car/track6.png")
-car = pygame.image.load("Self-driving_Car/tesla.png")
+track = pygame.image.load("Self-driving Car/track6.png")
+car = pygame.image.load("Self-driving Car/tesla.png")
 car = pygame.transform.scale(car, (30, 60))
 car_x = 155
 car_y = 300
